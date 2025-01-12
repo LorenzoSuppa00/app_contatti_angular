@@ -1,18 +1,19 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-contatto',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './contatto.component.html',
   styleUrl: './contatto.component.css'
 })
 export class ContattoComponent {
 
-  constructor(private router: Router) {}
+  //? Metodo alternativo a routerLink
+  // constructor(private router: Router) {}
 
-  goBack(): void {
-    this.router.navigate(['/']); // Naviga alla homepage
-  }
+  // goBack(): void {
+  //   this.router.navigate(['/']); // Naviga alla homepage
+  // }
   
 }
