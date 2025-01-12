@@ -1,0 +1,58 @@
+<header>
+  <nav class="navbar navbar-light bg-light">
+    <div class="container-fluid d-flex justify-content-start w-100">
+      <button class="btn btn-outline-secondary" (click)="goBack()">
+        <span style="font-size: 16px">&larr;</span>
+      </button>
+      <div class="d-flex justify-content-center flex-grow-1">
+        <span class="navbar-brand mb-0 h1">Aggiungi o Modifica Contatto</span>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="container">
+  <form>
+    <div class="mb-3">
+      <label for="email" class="form-label">E-mail</label>
+      <input type="email" class="form-control" id="email" name="email" />
+    </div>
+
+    <div class="mb-3">
+      <label for="first-name" class="form-label">First Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="first-name"
+        name="first-name"
+      />
+    </div>
+
+    <div class="mb-3">
+      <label for="last-name" class="form-label">Last Name</label>
+      <input type="text" class="form-control" id="last-name" name="last-name" />
+    </div>
+
+    <div class="mb-3">
+      <label for="age" class="form-label">Age</label>
+      <input type="number" class="form-control" id="age" name="age" />
+    </div>
+
+    <div class="mb-3">
+      <label for="job-name" class="form-label">Job Name</label>
+      <input type="text" class="form-control" id="job-name" name="job-name" />
+    </div>
+
+    <div class="mb-3">
+      <label for="description" class="form-label">Description</label>
+      <textarea
+        class="form-control"
+        id="description"
+        name="description"
+        rows="3"
+      ></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Salva</button>
+  </form>
+</div>
